@@ -2,7 +2,7 @@ let team = [
     {
         name:"Wayne Bamett",
         role:"Founder & CEO",
-        image:"wayne-barett-founder-ceo.jpg"
+        image:"wayne-barnett-founder-ceo.jpg"
     },
     {
         name:"Angela Caroll",
@@ -40,5 +40,5 @@ for(let i=0;i<team.length;i++){
 let space = " ";
 let workTeam = document.getElementById("team");
 for(let i=0;i<team.length;i++){ 
-    workTeam.innerHTML+="<div>" +"NOME: " + team[i].name + "<br>" + "RUOLO: " + team[i].role + "<br>" + "FOTO: " + team[i].image + "<br>" + "<br></div>";
+    workTeam.innerHTML+=`<h2>NOME: ${team[i].name}<br> RUOLO: ${team[i].role}<h2><img src="./img/${team[i].image}" alt="">`;
 }
