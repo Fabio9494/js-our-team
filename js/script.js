@@ -36,3 +36,9 @@ for(let i=0;i<team.length;i++){
         console.log(team[i][key])
     }
 }
+
+let space = " ";
+let workTeam = document.getElementById("team");
+for(let i=0;i<team.length;i++){ 
+    workTeam.innerHTML+="<div>" +"NOME: " + team[i].name + "<br>" + "RUOLO: " + team[i].role + "<br>" + "FOTO: " + team[i].image + "<br>" + "<br></div>";
+}
